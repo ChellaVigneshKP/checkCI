@@ -1,0 +1,18 @@
+global:
+  artifactory:
+    url: "https://jfrog.chellavignesh.com/artifactory"
+    releaseRepo: "devops-jfrog-libs-release"
+    snapshotRepo: "devops-jfrog-libs-snapshot"
+
+  github:
+    credentialsId: "github-app-jenkins"
+    defaultCheckName: "Chella Jenkins CI"
+
+  security:
+    failOnVulnerability: true
+    severityThreshold: "HIGH,CRITICAL"
+
+maven:
+  javaVersion: "21"
+  mavenVersion: "Maven 3.9.9"
+  goals: "clean compile"
