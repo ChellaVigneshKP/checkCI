@@ -11,7 +11,7 @@ pipeline {
 
 	environment {
 		REPO_OWNER = 'ChellaVigneshKP'
-		REPO_NAME = 'lib-crypto'
+		REPO_NAME = 'checkCI'
 	}
 
 	stages {
