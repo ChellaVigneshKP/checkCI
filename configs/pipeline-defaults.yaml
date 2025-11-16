@@ -13,6 +13,6 @@ global:
     severityThreshold: "HIGH,CRITICAL"
 
 maven:
-  javaVersion: "21"
+  javaVersion: "25"
   mavenVersion: "Maven 3.9.9"
   goals: "clean compile"
