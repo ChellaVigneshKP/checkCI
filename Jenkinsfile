@@ -15,17 +15,6 @@ pipeline {
 	}
 
 	stages {
-		stage('Debug') {
-			steps {
-				script {
-					if (isUnix()) {
-						sh "ls -R ."
-					} else {
-						bat "dir /s"
-					}
-				}
-			}
-		}
 		stage('Checkout') { steps { script {
 			githubChecks.startCheck('Checkout', 'Starting pipeline')
 			checkout scm
